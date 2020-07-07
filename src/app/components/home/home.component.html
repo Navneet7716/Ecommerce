@@ -1,0 +1,31 @@
+<div class="homeContainer">
+  <!-- <mat-grid-list cols="4" rowHeight="2:3"> -->
+  <div *ngFor="let item of products">
+    <!-- <mat-grid-tile> -->
+    <mat-card class="example-detail-card">
+      <img
+        mat-card-image
+        src="./../../../assets/images/{{ item.filename }}"
+        alt="./../../../assets/images/{{ item.filename }}"
+      />
+      <mat-card-content class="content">
+        <p>
+          {{ item.title }}
+        </p>
+        <span class="example-spacer"></span>
+        Price: ${{ item.price }}
+      </mat-card-content>
+      <mat-card-actions>
+        <button
+          mat-raised-button
+          color="accent"
+          [routerLink]="['/detail', item.id]"
+        >
+          Detail
+        </button>
+      </mat-card-actions>
+    </mat-card>
+    <!-- </mat-grid-tile> -->
+  </div>
+  <!-- </mat-grid-list> -->
+</div>

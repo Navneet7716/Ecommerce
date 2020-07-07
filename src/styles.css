@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.active {
+  background-color: black;
+}
+
+.example-spacer {
+  flex: 2 1 auto;
+}
+.container {
+  margin: 10rem;
+}
+
+.example-detail-card {
+  min-height: 374px;
+  max-height: 500px;
+  min-width: 342px;
+  max-width: 374px;
+  margin: 5%;
+  flex: 1;
+  /* flex-basis: 27%; */
+}
+
+.homeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-right: 2%;
+}

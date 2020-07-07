@@ -1,0 +1,15 @@
+.CartList {
+  flex: auto auto auto;
+}
+
+table {
+  width: 70%;
+}
+
+tr.mat-footer-row {
+  font-weight: bold;
+}
+
+.container {
+  margin: 10rem;
+}
